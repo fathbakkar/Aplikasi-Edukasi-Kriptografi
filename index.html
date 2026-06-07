@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diffie-Hellman Key Exchange — Edukasi Kriptografi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Diffie-Hellman Key Exchange</h1>
+        <p>Aplikasi Edukasi & Simulasi Visual Kriptografi</p>
+    </header>
+    
+    <div class="card">
+        <div class="card-title">1. Parameter Publik (Grup Modular)</div>
+        <div class="grid-2">
+            <div class="input-group">
+                <label for="primeP">Bilangan Prima Publik (p)</label>
+                <input type="number" id="primeP" placeholder="Masukkan nilai p (contoh: 23)">
+            </div>
+            <div class="input-group">
+                <label for="genG">Generator Publik (g)</label>
+                <input type="number" id="genG" placeholder="Masukkan nilai g (contoh: 5)">
+            </div>
+        </div>
+    </div>
+
+    <div class="grid-2">
+        <div class="card livia">
+            <div class="card-title" style="color: var(--livia-color);">Livia</div>
+            <div class="input-group">
+                <label for="privateA">Private Key (a)</label>
+                <input type="number" id="privateA" placeholder="Contoh: 4">
+            </div>
+        </div>
+        
+        <div class="card nawir">
+            <div class="card-title" style="color: var(--nawir-color);">Nawir</div>
+            <div class="input-group">
+                <label for="privateB">Private Key (b)</label>
+                <input type="number" id="privateB" placeholder="Contoh: 3">
+            </div>
+        </div>
+    </div>
+
+    <div class="btn-container">
+        <button onclick="jalankanSimulasi()">Mulai Simulasi Pertukaran</button>
+    </div>
+
+    <div class="card diagram-area" id="diagramArea">
+        <div class="card-title" style="text-align: center;">Visualisasi Langkah demi Langkah</div>
+        <div id="langkahProses" class="step-container"></div>
+        <div id="finalBadgeContainer"></div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
