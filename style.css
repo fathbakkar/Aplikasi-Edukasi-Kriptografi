@@ -293,3 +293,50 @@ button:active {
         padding: 18px;
     }
 }
+
+/* ==========================
+   TAMBAHAN: Error, Reset, Eve
+========================== */
+
+.error-box {
+    display: none;
+    background: rgba(255, 69, 58, 0.08);
+    border: 1px solid rgba(255, 69, 58, 0.25);
+    color: #d70015;
+    border-radius: var(--border-radius-small);
+    padding: 16px 20px;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.error-box ul {
+    margin: 8px 0 0 18px;
+}
+
+.error-box li {
+    margin-bottom: 4px;
+}
+
+.btn-secondary {
+    background-color: #e8e8ed;
+    color: var(--text-main);
+    box-shadow: none;
+    margin-left: 12px;
+}
+
+.btn-secondary:hover {
+    background-color: #dcdce1;
+    box-shadow: none;
+}
+
+.step.active-eve {
+    border-left-color: #ff9f0a;
+    background: rgba(255, 159, 10, 0.07);
+}
+
+@media screen and (max-width: 480px) {
+    .btn-secondary {
+        margin-left: 0;
+        margin-top: 12px;
+    }
+}
